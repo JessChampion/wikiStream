@@ -1,4 +1,4 @@
-
+.idea
 # Exclude Node.js packages
 node_modules/
 typings/

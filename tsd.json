@@ -29,6 +29,12 @@
     "react-router/history.d.ts": {
       "commit": "310c247694d7f31bd2e3198f71c55221f7c3a3c7"
     },
+    "redux/redux.d.ts": {
+      "commit": "310c247694d7f31bd2e3198f71c55221f7c3a3c7"
+    },
+    "react-redux/react-redux.d.ts": {
+      "commit": "310c247694d7f31bd2e3198f71c55221f7c3a3c7"
+    },
     "express-serve-static-core/express-serve-static-core.d.ts": {
       "commit": "310c247694d7f31bd2e3198f71c55221f7c3a3c7"
     }

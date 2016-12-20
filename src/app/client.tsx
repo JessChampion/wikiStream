@@ -1,7 +1,15 @@
-﻿
-import * as React from 'react';
+﻿﻿import * as React from 'react';
 import * as ReactDOM from 'react-dom';
-import { Router, browserHistory } from 'react-router';
+import {Provider} from 'react-redux';
+import {browserHistory, Router} from 'react-router';
 import routes from './routes';
+import store from './store';
 
-ReactDOM.render(<Router history={browserHistory}>{routes}</Router>, document.getElementById('body'));
+export default ReactDOM.render((
+    <Provider
+      store={store}>
+      <Router history={browserHistory}>{routes}</Router>
+    </Provider>
+  ),
+  document.getElementById('body')
+);

@@ -1,12 +1,12 @@
-﻿
+﻿﻿
 import * as React from 'react';
 
-export interface HelloProps {
+export interface IHelloProps {
     name: string;
 }
 
-export default class Hello extends React.Component<HelloProps, any> {
-    constructor(props: HelloProps) {
+export default class Hello extends React.Component<IHelloProps, any> {
+    constructor(props: IHelloProps) {
         super(props);
     }
 

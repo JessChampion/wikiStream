@@ -1,6 +1,9 @@
 
 # Isomorphic React TypeScript Starter
 
+Based on https://github.com/toddlucas/react-tsx-starter
+I've added TSLint and postCSS to customise it to my tastes.
+
 This project includes a working example of React, React Router, and TypeScript.
 TypeScript 1.6 added much needed support for JSX parsing, in the form of TSX files.
 

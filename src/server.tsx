@@ -1,19 +1,17 @@
-﻿﻿/// <reference path="../typings/index.d.ts"/>
+﻿import * as ReactDOMServer from 'react-dom/server';
+import * as React from 'react';
+import {Provider} from 'react-redux';
+import {createMemoryHistory, match, RouterContext} from 'react-router';
 
 import express = require('express');
-import * as history from 'history';
 import http = require('http');
 import path = require('path');
-import React = require('react');
-import * as ReactDOMServer from 'react-dom/server';
-import {Provider} from 'react-redux';
-import {match, RouterContext} from 'react-router';
 
 import routes from './app/routes';
 import store from './app/store';
 
 let app = express();
-let memoryHistory = history.createMemoryHistory();
+let memoryHistory = createMemoryHistory();
 
 // all environments
 app.set('port', process.env.PORT || 3000);

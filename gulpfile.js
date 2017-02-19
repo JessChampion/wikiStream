@@ -85,7 +85,6 @@ var build = {
   },
   other: {
     clean: ['output/*', 'build/*'],
-    output_typings: 'output/typings',
     // An intermediate file; output from tsx, input to bundle.
     client_js: [paths.output + 'app/client.js']
   }
@@ -138,16 +137,16 @@ gulp.task('typescript', function () {
   var tsResult = gulp
     .src(build.input.files.ts)
     .pipe(typescript({
-      noImplicitAny: false,
-      noEmitOnError: true,
-      declarationFiles: true,
-      noExternalResolve: false,
+      // noEmitOnError: true,
+      // declarationFiles: true,
+      // noExternalResolve: false,
       removeComments: false,
-      module: 'commonjs',
       diagnostics: true,
-      sourceMap: true,
+      jsx: 'react',
+      module: 'commonjs',
       target: 'ES5',
-      jsx: 'react'
+      noImplicitAny: false,
+      sourceMap: false
     }));
 
   return tsResult.js
@@ -237,6 +236,10 @@ gulp.task('watch', function () {
   gulp.watch(build.input.files.ts, ['recompile']);
   gulp.watch(build.input.files.views, ['views']);
   gulp.watch(build.input.files.styles, ['styles']);
+});
+
+gulp.task('dev', function (callback) {
+  runSequence('build', 'watch', callback);
 });
 
 // The default task (called when running 'gulp' from the command line).

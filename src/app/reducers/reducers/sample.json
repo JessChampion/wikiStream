@@ -1,0 +1,35 @@
+{
+  "bot": false,
+  "comment": "{{S|biblioteche degli Stati Uniti d'America|California}}",
+  "id": 155185328,
+  "length": {
+    "new": 1056,
+    "old": 1134
+  },
+  "meta": {
+    "domain": "it.wikipedia.org",
+    "dt": "2017-02-18T07:27:48+01:00",
+    "id": "5de973af-f5a3-11e6-8555-1418776135a3",
+    "request_id": "fce58cb6-4a4b-4d06-995c-d2dc7be49d71",
+    "schema_uri": "mediawiki/recentchange/1",
+    "topic": "eqiad.mediawiki.recentchange",
+    "uri": "https://it.wikipedia.org/wiki/Ronald_Reagan_Presidential_Library",
+    "partition": 0,
+    "offset": 36824432
+  },
+  "minor": false,
+  "namespace": 0,
+  "patrolled": false,
+  "revision": {
+    "new": 86001297,
+    "old": 78482004
+  },
+  "server_name": "it.wikipedia.org",
+  "server_script_path": "/w",
+  "server_url": "https://it.wikipedia.org",
+  "timestamp": 1487399268,
+  "title": "Ronald Reagan Presidential Library",
+  "type": "edit",
+  "user": "178.66.155.34",
+  "wiki": "itwiki"
+}

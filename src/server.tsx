@@ -32,7 +32,7 @@ app.get('/help', (req, res) => {
 });
 
 app.use((req, res, next) => {
-  const location = memoryHistory.createLocation(req.url);
+  const location = memoryHistory.createHref(req.url);
 
   match({routes, location}, (error, redirectLocation, renderProps: any) => {
     let html = ReactDOMServer.renderToString((

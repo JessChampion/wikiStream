@@ -3,6 +3,7 @@
 <head>
     <meta charset="utf-8" />
     <title>@model.title</title>
+    <link href="https://fonts.googleapis.com/css?family=Raleway|Raleway+Dots" rel="stylesheet">
     @html.include('_appcss', { min: model.min })
 </head>
 <body>

@@ -1,15 +1,15 @@
-
-import { combineReducers, createStore, Store } from 'redux';
+import {combineReducers, createStore, Store} from 'redux';
 import * as reducers from './reducers';
 
 const rootReducer = combineReducers(reducers as any); // ES6 trick
 const store = createStore(rootReducer);
 
 store.subscribe(() => {
-    // Log the state whenever the store changes.
-    console.log(store.getState());
-  });
+  // console.log(store.getState()); // Log the state whenever the store changes.
+});
 
-export interface IStoreContext { store: Store<any>; }
+export interface IStoreContext {
+  store: Store<any>;
+}
 
 export default store;

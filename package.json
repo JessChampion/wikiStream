@@ -7,8 +7,10 @@
   },
   "browserify-shim": {},
   "dependencies": {
+    "eventsource": "^0.2.1",
     "express": "^4.14.1",
     "history": "^4.5.1",
+    "ramda": "^0.23.0",
     "react": "^15.4.2",
     "react-dom": "^15.4.2",
     "react-redux": "^5.0.2",
@@ -19,6 +21,7 @@
   "devDependencies": {
     "@types/express": "^4.0.35",
     "@types/history": "^4.5.0",
+    "@types/ramda": "0.0.3",
     "@types/react": "^15.0.11",
     "@types/react-dom": "^0.14.23",
     "@types/react-redux": "^4.4.36",

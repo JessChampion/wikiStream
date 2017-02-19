@@ -1,25 +1,40 @@
-﻿
-import * as React from 'react';
-import { Link } from 'react-router';
-import Hello from '../components/Hello';
+﻿import * as React from 'react';
+import StartStop from '../components/StartStop';
+import EditTicker from '../components/EditTicker';
+import Reset from '../components/Reset';
+import Stats from '../components/Stats';
 
-var HomeView = React.createClass({
-    getInitialState: function() {
-        return { loaded: false };
-    },
-    
-    componentDidMount: function() {
-        this.setState({ loaded: true });
-    },
-    
-    render: function() {
-        var loading = this.state.loaded ? "" : " (loading...)";
-        return <div>
-            <h2>HomeView {loading}</h2>
-            <Hello name="world" />
-            <div><Link to="/about">About</Link></div>
-        </div>;
+export default React.createClass({
+  getInitialState() {
+    return {loaded: false};
+  },
+
+  componentDidMount() {
+    this.setState({loaded: true});
+  },
+
+  renderLoading() {
+    return (
+      <div>
+        <h2>Loading...</h2>
+      </div>
+    );
+  },
+
+  render() {
+    if (this.state.loaded === false) {
+      return this.renderLoading();
     }
-});
 
-export default HomeView;
+    return (
+      <div>
+        <EditTicker/>
+        <Stats/>
+        <div className="controls section">
+          <StartStop/>
+          <Reset/>
+        </div>
+      </div>
+    );
+  }
+});

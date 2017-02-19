@@ -40,7 +40,7 @@ var build = {
       ],
 
       // Styles
-      styles: paths.source + 'styles/**/*.css',
+      styles: paths.source + 'styles/**/*.*css',
       stylesMin: paths.source + 'styles/**/*.min.css',
 
       // Scripts
